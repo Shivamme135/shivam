@@ -1,0 +1,18 @@
+package shivam.javacode;
+
+import java.util.Scanner;
+
+public class Main {
+
+  public static void main(String [] args) {
+
+     Scanner sc = new Scanner(System.in);
+
+     int units = sc.nextInt();
+     
+     int rate = (units >= 0 && units <= 200) ? 1*units : (units >=201 && units <= 300) ? 1*200+2*(units-200) : (units >=301 && units <= 400) ? 1*200+2*100+3*(units-300) : (units >= 401 && units <=500) ? 200+200+300+5*(units-400) : 1100+10*(units-500);
+    System.out.println("result is "+rate);
+
+  }
+
+}
